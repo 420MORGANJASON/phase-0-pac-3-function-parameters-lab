@@ -2,10 +2,14 @@
   "name": "java-script-intro-to-functions-lab",
   "version": "0.1.0",
   "description": "Practice writing functions in JavaScript",
-  "main": "index.js",
+   "main": "index.js",
+  // "scripts": {
+  //   "test": "mocha --timeout 5000 --reporter 'json' > .results.json & mocha"
+  // },
   "scripts": {
-    "test": "mocha --timeout 5000 --reporter 'json' > .results.json & mocha"
-  },
+    "start": "nodemon ./bin/www",
+    "test": "mocha --exit --recursive --timeout 5000" // add this line
+  }
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/learn-co-curriculum/java-script-intro-to-functions-lab.git"
